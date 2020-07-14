@@ -1,5 +1,4 @@
 'use strict';
-const token = require('./access_token');
 // Imports dependencies and set up http server
 const
   express = require('express'),
@@ -38,7 +37,7 @@ if (body.object === 'page') {
 app.get('/webhook', (req, res) => {
 
     // Your verify token. Should be a random string.
-    let VERIFY_TOKEN = token;
+    let VERIFY_TOKEN = process.env.TOKEN;
       
     // Parse the query params
     let mode = req.query['hub.mode'];
