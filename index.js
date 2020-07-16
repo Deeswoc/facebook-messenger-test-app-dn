@@ -3,6 +3,7 @@
 const
   PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN,
   express = require('express'),
+  request = require('request'),
   bodyParser = require('body-parser'),
   app = express().use(bodyParser.json()); // creates express http server
 
