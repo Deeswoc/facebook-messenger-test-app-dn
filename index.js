@@ -1,11 +1,7 @@
 'use strict';
 // Imports dependencies and set up http server
 const
-<<<<<<< HEAD
   PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN,
-=======
-  PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN,
->>>>>>> 24fae21953310f73f5fd1678445206dbd8b3428c
   express = require('express'),
   bodyParser = require('body-parser'),
   app = express().use(bodyParser.json()); // creates express http server
