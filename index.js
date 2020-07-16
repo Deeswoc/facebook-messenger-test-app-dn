@@ -98,7 +98,6 @@ app.get('/webhook', (req, res) => {
 
   // Sends response messages via the Send API
   function callSendAPI(sender_psid, response) {
-    function callSendAPI(sender_psid, response) {
       // Construct the message body
       let request_body = {
         "recipient": {
@@ -106,6 +105,6 @@ app.get('/webhook', (req, res) => {
         },
         "message": response
       }
-    }
+    
   }
 app.listen(process.env.PORT || 1337, () => console.log('webhook is listening'));
